@@ -1,0 +1,31 @@
+{
+	"name": "bun-react-template",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"main": "src/index.tsx",
+	"module": "src/index.tsx",
+	"scripts": {
+		"build": "tsr generate && bun run build.ts",
+		"dev": "concurrently \"tsr watch\"  \"bun --hot src/index.html --no-clear-screen\"",
+		"preview": "serve dist",
+		"format": "biome format --write ."
+	},
+	"dependencies": {
+		"@tanstack/react-router": "^1.114.13",
+		"@tanstack/router-cli": "^1.114.13",
+		"@tanstack/router-devtools": "^1.114.13",
+		"bun-plugin-tailwind": "^0.0.14",
+		"react": "^19",
+		"react-dom": "^19",
+		"tailwindcss": "^4.0.6"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"concurrently": "^9.1.2",
+		"serve": "^14.2.4"
+	}
+}

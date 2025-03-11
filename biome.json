@@ -1,0 +1,24 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.1/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"ignore": ["dist/", "src/routeTree.gen.ts"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 4,
+		"indentStyle": "tab",
+		"ignore": ["dist/", "src/routeTree.gen.ts"]
+	},
+	"javascript": {
+		"formatter": {
+			"bracketSpacing": true
+		}
+	}
+}
