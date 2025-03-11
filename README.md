@@ -44,6 +44,7 @@ Build the application for production:
 ```bash
 bun build
 ```
+This will generate a `dist/` directory containing the production build. Set this as the build output directory in the static site hosting service of your choice.
 
 ### Preview Production Build
 
