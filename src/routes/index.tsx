@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import logo from "@/assets/logo.svg";
 import reactLogo from "@/assets/react.svg";
@@ -24,8 +24,8 @@ export function Index() {
 				/>
 				<img
 					src={tanstackLogo}
-					alt="React Logo"
-					className="h-24 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#61dafbaa]"
+					alt="TanStack Logo"
+					className="h-24 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#00b31b]"
 				/>
 			</div>
 
@@ -39,11 +39,11 @@ export function Index() {
 				</code>{" "}
 				and save to test HMR
 			</p>
-			<a href={"/about"}>
+			<Link to={"/about"}>
 				<button className="bg-[#fbf0df] text-[#1a1a1a] border-0 px-5 py-1.5 rounded-lg font-bold transition-all duration-100 hover:bg-[#f3d5a3] hover:-translate-y-px cursor-pointer whitespace-nowrap mt-10">
 					Go to About
 				</button>
-			</a>
+			</Link>
 		</div>
 	);
 }
