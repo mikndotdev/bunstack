@@ -61,8 +61,10 @@ bun preview
 │   ├── components/     # Reusable components
 │   ├── routes/         # File-based routes
 │   └── index.tsx       # Application entry point
-├── public/             # Public files
-├── build.ts            # Build configuration
+├── build.ts            # Build script (required as the Tailwind plugin cannot be accessed via the CLI)
 ├── package.json
 └── tsconfig.json
 ```
+
+## Credits
+- Partly inspired by [Bunfun](https://github.com/mattfysh/bunfun)
